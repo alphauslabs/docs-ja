@@ -12,7 +12,7 @@ theme:
 nav:
 - 'ホーム':
   - 'index.md'
-  - 'Identity & access management': 'iam.md'
+  - 'IdentityとAccess Management': 'iam.md'
   - 'ヘルプセンター': 'https://help.alphaus.cloud/ja/'
   - '先のドキュメント': 'https://docs.alphaus.cloud/v/ripple/'
   - 'システムステータス': 'https://status.alphaus.cloud/'
