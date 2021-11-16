@@ -10,7 +10,7 @@ theme:
   - navigation.expand
 
 nav:
-- 'General':
+- 'ホーム':
   - 'index.md'
   - 'Identity & access management': 'iam.md'
   - 'Knowledgebase': 'https://help.alphaus.cloud/jp/'
