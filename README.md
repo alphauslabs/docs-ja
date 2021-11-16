@@ -1,3 +1,3 @@
-[![ci](https://github.com/alphauslabs/docs/actions/workflows/ci.yml/badge.svg)](https://github.com/alphauslabs/docs/actions/workflows/ci.yml)
+[![ci](https://github.com/alphauslabs/docs-ja/actions/workflows/ci.yml/badge.svg)](https://github.com/alphauslabs/docs-ja/actions/workflows/ci.yml)
 
-See [here](https://alphauslabs.github.io/docs/).
+See [here](https://alphauslabs.github.io/docs-ja/).
