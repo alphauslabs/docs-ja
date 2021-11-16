@@ -1,0 +1,40 @@
+site_name: Alphaus Documentation
+copyright: Copyright &copy; 2021 Alphaus Cloud. All rights reserved.
+
+theme:
+  name: material
+  logo: assets/alphaus.png
+  favicon: assets/alphaus.png
+  features:
+  - navigation.tabs
+  - navigation.expand
+
+nav:
+- 'General':
+  - 'index.md'
+  - 'Identity & access management': 'iam.md'
+  - 'Knowledgebase': 'https://help.alphaus.cloud/'
+  - 'Previous documentation': 'https://docs.alphaus.cloud/'
+  - 'System status': 'https://status.alphaus.cloud/'
+- 'Blue API':
+  - 'blueapi/overview.md'
+  - 'blueapi/authentication.md'
+  - 'APIs':
+    - 'blueapi/apis/org.md'
+    - 'blueapi/apis/kvstore.md'
+    - 'blueapi/apis/iam.md'
+    - 'blueapi/apis/cost.md'
+  - 'blueapi/client-sdks.md'
+
+extra:
+  alternate:
+  - name: 日本語
+    link: /docs/jp/
+    lang: ja
+
+markdown_extensions:
+- admonition
+- pymdownx.details
+- pymdownx.superfences
+- pymdownx.tabbed:
+    alternate_style: true 
