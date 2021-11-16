@@ -1,4 +1,4 @@
-site_name: Alphaus Documentation
+site_name: アルファスのドキュメント
 copyright: Copyright &copy; 2021 Alphaus Cloud. All rights reserved.
 
 theme:
@@ -28,8 +28,11 @@ nav:
 
 extra:
   alternate:
+  - name: English
+    link: /docs/
+    lang: en
   - name: 日本語
-    link: /docs/jp/
+    link: /docs-ja/
     lang: ja
 
 markdown_extensions:
