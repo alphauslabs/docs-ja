@@ -13,6 +13,10 @@ nav:
 - 'ホーム':
   - 'index.md'
   - 'IdentityとAccess Management': 'iam.md'
+  - 'Ripple 🡥': 'https://docs.alphaus.cloud/v/ripple/'
+  - 'Wave 🡥': 'https://docs.alphaus.cloud/v/wave/'
+  - 'WavePro 🡥': 'https://docs.alphaus.cloud/v/projp/'
+  - 'Aqua 🡥': 'https://docs.alphaus.cloud/v/aqua/'
   - 'ヘルプセンター 🡥': 'https://help.alphaus.cloud/ja/'
   - '先のドキュメント 🡥': 'https://docs.alphaus.cloud/v/ripple/'
   - 'システムステータス 🡥': 'https://status.alphaus.cloud/'
