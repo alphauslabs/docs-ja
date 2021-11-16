@@ -1,2 +1,2 @@
 # 概要
-Welcome to [Alphaus](https://alphaus.cloud/) documentation. Find user guides, developer guides, API references, tutorials, sample codes, and more.
+[アルファス](https://alphaus.cloud/)のドキュメントへようこそ。ガイド、コードサンプル、チュートリアル、APIリファレンスなどを参照して、アルファスでの構築方法についてご確認ください。
