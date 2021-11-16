@@ -13,7 +13,7 @@ nav:
 - 'ホーム':
   - 'index.md'
   - 'Identity & access management': 'iam.md'
-  - 'Knowledgebase': 'https://help.alphaus.cloud/ja/'
+  - 'ヘルプセンター': 'https://help.alphaus.cloud/ja/'
   - '先のドキュメント': 'https://docs.alphaus.cloud/v/ripple/'
   - 'システムステータス': 'https://status.alphaus.cloud/'
 - 'Blue API':
