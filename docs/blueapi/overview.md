@@ -1,4 +1,4 @@
-# Overview
+# 概要
 
 !!! info "API Reference"
     [https://alphauslabs.github.io/blueapidocs/](https://alphauslabs.github.io/blueapidocs/)
