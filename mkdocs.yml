@@ -29,6 +29,7 @@ nav:
     - 'blueapi/apis/iam.md'
     - 'blueapi/apis/cost.md'
   - 'blueapi/client-sdks.md'
+  - 'blueapi/bluectl.md'
 
 extra:
   alternate:
