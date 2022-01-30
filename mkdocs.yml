@@ -28,7 +28,11 @@ nav:
     - 'blueapi/apis/org.md'
     - 'blueapi/apis/kvstore.md'
     - 'blueapi/apis/iam.md'
+    - 'blueapi/apis/admin.md'
     - 'blueapi/apis/cost.md'
+    - 'blueapi/apis/billing.md'
+    - 'blueapi/apis/operations.md'
+    - 'blueapi/apis/preferences.md'
   - 'blueapi/client-sdks.md'
 
 extra:
