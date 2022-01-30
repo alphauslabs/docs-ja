@@ -23,13 +23,13 @@ nav:
 - 'Blue API':
   - 'blueapi/overview.md'
   - 'blueapi/authentication.md'
+  - 'CLI: bluectl': 'blueapi/bluectl.md'
   - 'APIs':
     - 'blueapi/apis/org.md'
     - 'blueapi/apis/kvstore.md'
     - 'blueapi/apis/iam.md'
     - 'blueapi/apis/cost.md'
   - 'blueapi/client-sdks.md'
-  - 'blueapi/bluectl.md'
 
 extra:
   alternate:
