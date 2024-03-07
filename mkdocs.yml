@@ -7,7 +7,8 @@ theme:
   favicon: assets/alphaus.png
   features:
   - navigation.tabs
-  - navigation.expand
+  - navigation.sections
+  # - navigation.expand
 
 nav:
 - 'ホーム':
@@ -29,11 +30,11 @@ nav:
     - 'blueapi/apis/kvstore.md'
     - 'IAM':
       - 'blueapi/apis/iam.md'
-      - 'blueapi/apis/ima/WhoAmI.md'
-      - 'blueapi/apis/ima/ListUsers.md'
-      - 'blueapi/apis/ima/GetUser.md'
-      - 'blueapi/apis/ima/CreateUser.md'
-      - 'blueapi/apis/ima/DeleteUser.md'
+      - 'blueapi/apis/iam/WhoAmI.md'
+      - 'blueapi/apis/iam/ListUsers.md'
+      - 'blueapi/apis/iam/GetUser.md'
+      - 'blueapi/apis/iam/CreateUser.md'
+      - 'blueapi/apis/iam/DeleteUser.md'
     - 'blueapi/apis/admin.md'
     - 'blueapi/apis/cost.md'
     - 'blueapi/apis/billing.md'
@@ -56,3 +57,7 @@ markdown_extensions:
 - pymdownx.superfences
 - pymdownx.tabbed:
     alternate_style: true 
+
+plugins:
+  search:
+    lang: 'ja'
