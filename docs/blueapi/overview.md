@@ -1,6 +1,6 @@
 # 概要
 
-!!! info "API Reference"
+!!! info "API リファレンス"
     [https://alphauslabs.github.io/blueapidocs/](https://alphauslabs.github.io/blueapidocs/)
 
 Blue API allows you to programmatically access our services such as [Ripple](https://alphaus.cloud/en/product/ripple/) and [Wave(Pro)](https://alphaus.cloud/en/product/wave/). It uses [protocol buffers](https://developers.google.com/protocol-buffers/) for service and message definitions, and [gRPC](https://grpc.io/) for implementation and server/client stub generation. It also uses [grpc-gateway](https://grpc-ecosystem.github.io/grpc-gateway/) for proxying JSON/REST requests to gRPC, and generating [OpenAPI](https://www.openapis.org/) documentation. This way, you have the option to use our APIs using either gRPC or JSON/REST, or both.
