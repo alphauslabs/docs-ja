@@ -1,3 +1,3 @@
-[![ci](https://github.com/alphauslabs/docs-ja/actions/workflows/ci.yml/badge.svg)](https://github.com/alphauslabs/docs-ja/actions/workflows/ci.yml)
+[![default](https://github.com/alphauslabs/docs-ja/actions/workflows/default.yml/badge.svg)](https://github.com/alphauslabs/docs-ja/actions/workflows/default.yml)
 
-See [here](https://alphauslabs.github.io/docs-ja/).
+Ripple/Octo documentation (Japanese version) - https://alphauslabs.github.io/docs-ja/
