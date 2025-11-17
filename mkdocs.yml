@@ -42,9 +42,9 @@ nav:
     - 'blueapi/apis/preferences.md'
   - 'blueapi/client-sdks.md'
 
-  - "Octo":
-    - "はじめ": "octo/index.md"
-
+- "Octo":
+  - "はじめ": "octo/index.md"
+  
 extra:
   alternate:
   - name: English
