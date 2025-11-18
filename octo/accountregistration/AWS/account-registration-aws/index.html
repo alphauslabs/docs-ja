@@ -1,0 +1,2388 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../account-registration/">
+      
+      
+        <link rel="next" href="../cloudformationtemplate/api-access/">
+      
+      
+        
+          <link rel="alternate" href="/docs/" hreflang="en">
+        
+          <link rel="alternate" href="/docs-ja/" hreflang="ja">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/alphaus.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>登録 - アルファスのドキュメント</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#aws" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="アルファスのドキュメント" class="md-header__button md-logo" aria-label="アルファスのドキュメント" data-md-component="logo">
+      
+  <img src="../../../../assets/alphaus.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            アルファスのドキュメント
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              登録
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/docs/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/docs-ja/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+  
+  ホーム
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../blueapi/overview/" class="md-tabs__link">
+          
+  
+  
+  Blue API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
+          
+  
+  
+  Octo
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="アルファスのドキュメント" class="md-nav__button md-logo" aria-label="アルファスのドキュメント" data-md-component="logo">
+      
+  <img src="../../../../assets/alphaus.png" alt="logo">
+
+    </a>
+    アルファスのドキュメント
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ホーム
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ホーム
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概要
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../iam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IdentityとAccess Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.alphaus.cloud/v/ripple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ripple 🔗
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.alphaus.cloud/v/wave/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wave 🔗
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.alphaus.cloud/v/projp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WavePro 🔗
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.alphaus.cloud/v/aqua/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aqua 🔗
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://help.alphaus.cloud/ja/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ヘルプセンター 🔗
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.alphaus.cloud/v/ripple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    先のドキュメント 🔗
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://status.alphaus.cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    システムステータス 🔗
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blue API
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blue API
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blueapi/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概要
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blueapi/authentication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blueapi/bluectl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLI: bluectl
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    APIs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    APIs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blueapi/apis/org/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organization API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blueapi/apis/kvstore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KvStore API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IAM
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    IAM
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blueapi/apis/iam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IAM API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blueapi/apis/iam/WhoAmI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WhoAmI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blueapi/apis/iam/ListUsers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ListUsers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blueapi/apis/iam/GetUser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GetUser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blueapi/apis/iam/CreateUser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CreateUser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blueapi/apis/iam/DeleteUser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DeleteUser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blueapi/apis/admin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Admin API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blueapi/apis/cost/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cost API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blueapi/apis/billing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Billing API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blueapi/apis/operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blueapi/apis/preferences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preferences API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blueapi/client-sdks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Client SDKs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Octo
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Octo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    はじめ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    アカウント登録
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    アカウント登録
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../account-registration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概要
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AWS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    登録
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    登録
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aws_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AWSコンソール経由
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWSコンソール経由">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ステップ1：登録方法の選択
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ステップ3：APIアクセスの設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4curs3payer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ステップ4：CURおよびS3バケットの設定（Payerアカウントのみ）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ステップ4：CURおよびS3バケットの設定（Payerアカウントのみ）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new-cur-setupcurcurs3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        「New CUR setup（新規CURの設定）」によるCURおよびS3バケットの設定
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="「New CUR setup（新規CURの設定）」によるCURおよびS3バケットの設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloudformationsetup-cloudformation-using-default-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デフォルト設定でCloudFormationをセットアップ（SETUP CLOUDFORMATION USING DEFAULT CONFIGURATION）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us-east-1-s3setup-target-s3-bucket-in-a-different-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        us-east-1 以外のリージョンにS3バケットを設定する（SETUP TARGET S3 BUCKET IN A DIFFERENT REGION
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#curcurs3setting-up-the-cur-and-s3-bucket-using-existing-cur-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        既存のCUR設定を使用してCURおよびS3バケットを設定する（Setting up the CUR and S3 bucket using Existing CUR setup）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5linked-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ステップ5：サブアカウント（Linked accounts）の追加
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terraform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terraform経由
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_2_2" id="__nav_3_2_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CloudFormation テンプレート
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CloudFormation テンプレート
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cloudformationtemplate/api-access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    APIアクセス
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cloudformationtemplate/cur-s3-bucket-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CURとS3バケット
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aws_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AWSコンソール経由
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWSコンソール経由">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ステップ1：登録方法の選択
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ステップ3：APIアクセスの設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4curs3payer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ステップ4：CURおよびS3バケットの設定（Payerアカウントのみ）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ステップ4：CURおよびS3バケットの設定（Payerアカウントのみ）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new-cur-setupcurcurs3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        「New CUR setup（新規CURの設定）」によるCURおよびS3バケットの設定
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="「New CUR setup（新規CURの設定）」によるCURおよびS3バケットの設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloudformationsetup-cloudformation-using-default-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デフォルト設定でCloudFormationをセットアップ（SETUP CLOUDFORMATION USING DEFAULT CONFIGURATION）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us-east-1-s3setup-target-s3-bucket-in-a-different-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        us-east-1 以外のリージョンにS3バケットを設定する（SETUP TARGET S3 BUCKET IN A DIFFERENT REGION
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#curcurs3setting-up-the-cur-and-s3-bucket-using-existing-cur-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        既存のCUR設定を使用してCURおよびS3バケットを設定する（Setting up the CUR and S3 bucket using Existing CUR setup）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5linked-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ステップ5：サブアカウント（Linked accounts）の追加
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terraform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terraform経由
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<div class="admonition note">
+<p class="admonition-title">ℹ️ 以下のドキュメントは機械翻訳により提供されています。提供された翻訳内容に関して、不明点または矛盾がある場合、英語版の方を参照ください。</p>
+</div>
+<h1 id="aws">AWSアカウント登録</h1>
+<p>Octoでは、AWSアカウントの登録方法として「AWSコンソール」と「Terraform」の2通りをサポートしています。</p>
+<ul>
+<li>
+<p><strong>AWSコンソール</strong>：ご自身のAWSアカウントにサインインし、スタックまたはスタックセット（stacks / stackset）をデプロイする必要があります。</p>
+</li>
+<li>
+<p><strong>Terraform</strong>：当社が提供するTerraformモジュールを使用して、必要なリソースをAWSアカウントにデプロイします。</p>
+</li>
+</ul>
+<p>これらの登録方法により、Octoは利用状況および請求データの取得、API操作の実行、
+さらにオプションで、Payerアカウント配下のLinkedアカウントの登録を行うことが可能になります。</p>
+<h2 id="aws_1">AWSコンソール経由</h2>
+<h3 id="1">ステップ1：登録方法の選択</h3>
+<p>「Connect via AWS Console（AWSコンソール経由で接続）」を選択してください。</p>
+<p><img alt="AWS Console" src="../../../../assets/accountRegistration/1stpage.png" /></p>
+<p>### ステップ2：基本情報</p>
+<div class="admonition note">
+<p class="admonition-title">推奨：請求アカウント（AWSのPayerアカウント）の登録</p>
+</div>
+<p>AWSのサブアカウント（Linkedアカウント）ではなく、請求アカウント（Payerアカウント）を登録することを推奨します。
+この後のプロセスで、サブアカウントを簡単に追加できるオプションがあるためです。</p>
+<p>a. AWSアカウントID（12桁）を入力</p>
+<p>b. アカウント名を入力</p>
+<p>c. 「Register Account（アカウントを登録）」をクリック</p>
+<p>Octoは、同じアカウントがすでにシステム上に存在するかを自動的に確認します。
+入力されたアカウント名またはAWSアカウントIDが既存の場合、エラーバナーが表示されます。</p>
+<p>d. エラーがない場合は、「Next（次へ）」をクリック</p>
+<p><img alt="Basic details" src="../../../../assets/accountRegistration/2basicDetails.png" /></p>
+<h3 id="3api">ステップ3：APIアクセスの設定</h3>
+<p>このステップでは、あなたのAWSアカウントにスタックをデプロイします。
+これにより、OctoがAPI操作を実行するために必要な権限が設定されます。
+CloudFormationテンプレートを使用した設定方法の詳細については、[こちら] () をご覧ください。</p>
+<p>a. <em>「Open AWS create stack page（AWSスタック作成ページを開く）」</em> をクリック
+この操作により、現在サインインしているAWSアカウントのスタック作成ページが開きます。
+必ず意図したアカウントにスタックをデプロイしてください。
+デフォルトのリージョンは us-east-1 です。</p>
+<p><img alt="Stack page" src="../../../../assets/accountRegistration/3API.png" /></p>
+<p>b. AWSのスタック作成フォーム画面にて、以下のデフォルト値を確認してください：</p>
+<ul>
+<li>
+<p>Stack name（スタック名）：そのままの値を使用するか、任意のスタック名を入力しても構いません。</p>
+</li>
+<li>
+<p>ExternalId：変更しないでください。</p>
+</li>
+<li>
+<p>Principal：変更しないでください。</p>
+</li>
+</ul>
+<p><img alt="stack values" src="../../../../assets/accountRegistration/awsConsole.png" /></p>
+<p>c. スタックの詳細を確認し、ページ下部にあるチェックボックスをオンにします。
+「I acknowledge that AWS CloudFormation might create IAM resources with custom names.」という同意メッセージにチェックを入れてください。</p>
+<p>d. 「Create stack（スタックを作成）」ボタンをクリックします。
+スタックの作成に成功したら、Octoに戻ってください。</p>
+<p><img alt="Agreement" src="../../../../assets/accountRegistration/consoleAgreement.png" /></p>
+<p>e. Octoに戻り、「Check and Confirm（確認）」をクリックして、デプロイを検証します。</p>
+<p>f. 検証では、対象のAWSアカウントが請求アカウント（Payer Account）か、サブアカウント（Linked Account）かを判定します。</p>
+<p><strong>サブアカウント（Linked account)</strong></p>
+<p>アカウントがサブアカウント（Linked account）の場合は、「Confirm and Finish（確認して完了）」ボタンをクリックして、登録を完了してください。</p>
+<p><img alt="Linked Account" src="../../../../assets/accountRegistration/3API.png" /></p>
+<p><strong>請求アカウント（Payer Account</strong></p>
+<p>アカウントが請求アカウント（Payer Account）の場合は、「Next（次へ）」をクリックして、Payerアカウント用の追加ステップに進んでください。</p>
+<p><img alt="Payer Acc" src="../../../../assets/accountRegistration/3API.png" /></p>
+<h3 id="4curs3payer">ステップ4：CURおよびS3バケットの設定（Payerアカウントのみ）</h3>
+<p>前のステップでPayerアカウントに接続した場合、このステップが表示されます。
+ AWSのデータをOctoに連携させるには、Payerアカウント用にCUR（Cost and Usage Report）とS3バケットの設定が必要です。このステップでは、以下の2つのオプションから選択できます：
+- New CUR setup（新規CURの設定）
+- Use existing CUR setup（既存のCURを使用）</p>
+<p><img alt="New or Existing" src="../../../../assets/accountRegistration/5SelectCUR.png" /></p>
+<h4 id="new-cur-setupcurcurs3">「New CUR setup（新規CURの設定）」によるCURおよびS3バケットの設定</h4>
+<h5 id="cloudformationsetup-cloudformation-using-default-configuration">デフォルト設定でCloudFormationをセットアップ（SETUP CLOUDFORMATION USING DEFAULT CONFIGURATION）</h5>
+<p>CURのエクスポート設定および対象のS3バケットは、us-east-1リージョンにデプロイされます。</p>
+<ol>
+<li>
+<p>Default configuration（デフォルト構成） を選択します。
+<img alt="default" src="../../../../assets/accountRegistration/6-1NewCURDefault.png" /></p>
+</li>
+<li>
+<p>Open AWS Create Stack Page をクリックします。</p>
+</li>
+<li>
+<p>このボタンをクリックすると、CloudFormationコンソールが開きます。</p>
+</li>
+<li>
+<p>デプロイ先が us-east-1 リージョンになっていることを確認してください。</p>
+</li>
+</ol>
+<p><img alt="Default" src="../../../../assets/accountRegistration/consoleNew.png" /></p>
+<ol>
+<li>作業が完了したら、Octoに戻り、Check and Confirm をクリックして検証を開始します。</li>
+</ol>
+<p><img alt="Verify New Setup" src="../../../../assets/accountRegistration/6-1-1NewCURDefaultSuccess.png" /></p>
+<ol>
+<li>検証に成功すると、サブアカウントの追加オプションが表示されます。
+・サブアカウントを追加する場合は、追加後に再度 Check and Confirm をクリックして完了させてください。
+・サブアカウントを追加しない場合は、このステップをスキップできます。</li>
+</ol>
+<p><img alt="Sub account" src="../../../../assets/accountRegistration/7addSub.png" /></p>
+<h5 id="us-east-1-s3setup-target-s3-bucket-in-a-different-region">us-east-1 以外のリージョンにS3バケットを設定する（SETUP TARGET S3 BUCKET IN A DIFFERENT REGION</h5>
+<p>S3バケットを、us-east-1 以外の希望するリージョンに設定する手順です。</p>
+<ol>
+<li>Target S3 bucket in a different region を選択します。</li>
+</ol>
+<p><img alt="Custom region" src="../../../../assets/accountRegistration/6-2NewCURCustom.png" /></p>
+<ol>
+<li>
+<p>「S3 Bucket」セクションで、Open AWS Create Stack Page をクリックします。</p>
+</li>
+<li>
+<p>上記のボタンをクリックすると、CloudFormationコンソールが開きます。</p>
+</li>
+<li>
+<p>「CUR」セクションでも、Open AWS Create Stack Page をクリックします。</p>
+</li>
+<li>
+<p>同様にCloudFormationコンソールが開きます。</p>
+</li>
+<li>
+<p>スタック名を入力します（そのままでも、任意のスタック名でも可）。
+その後、CurS3BucketOption パラメータを USE_EXISTING に設定し、
+CurS3BucketName と CurS3BucketRegion を指定してください。</p>
+</li>
+</ol>
+<p><img alt="Custom region" src="../../../../assets/accountRegistration/consoleExisting.png" /></p>
+<ol>
+<li>
+<p>作業が完了したら、このページに戻り、Check and Confirm をクリックして検証を開始します。</p>
+</li>
+<li>
+<p>検証後、サブアカウントを追加するオプションが表示されます。
+Open AWS Create Stack Page をクリックし、Check and Confirm をクリックして完了してください。</p>
+</li>
+</ol>
+<p><img alt="sub account" src="../../../../assets/accountRegistration/7addSub.png" /></p>
+<p>サブアカウントを追加しない場合は、Skip and finish（スキップして完了） をクリックしてください。</p>
+<h4 id="curcurs3setting-up-the-cur-and-s3-bucket-using-existing-cur-setup">既存のCUR設定を使用してCURおよびS3バケットを設定する（Setting up the CUR and S3 bucket using Existing CUR setup）</h4>
+<p><img alt="existing CUR" src="../../../../assets/accountRegistration/6-3Existing.png" /></p>
+<ol>
+<li>
+<p>Open AWS Create Stack Page をクリックします。</p>
+</li>
+<li>
+<p>上記のボタンをクリックすると、CloudFormationコンソールが開きます。</p>
+</li>
+<li>
+<p>スタック名を入力します（そのままでも、任意のスタック名でも可）。
+CurS3BucketName と CurS3BucketRegion をそれぞれ設定してスタックを作成します。
+Principal は変更しないでください。</p>
+</li>
+</ol>
+<p><img alt="console existing" src="../../../../assets/accountRegistration/awsConsoleCreateStack.png" /></p>
+<ol>
+<li>作業が完了したら、このページに戻り、Check and Confirm をクリックして検証を開始します。</li>
+</ol>
+<p><img alt="existing success" src="../../../../assets/accountRegistration/6-3-1ExistingSuccess.png" /></p>
+<ol>
+<li>検証後、サブアカウントを追加するオプションが表示されます。
+Open AWS Create Stack Page をクリックし、Check and Confirm をクリックして完了してください。</li>
+</ol>
+<p><img alt="sub account" src="../../../../assets/accountRegistration/7addSub.png" /></p>
+<p>サブアカウントを追加しない場合は、Skip and finish（スキップして完了） をクリックしてくだ</p>
+<h3 id="5linked-accounts">ステップ5：サブアカウント（Linked accounts）の追加</h3>
+<div class="admonition note">
+<p class="admonition-title">サブアカウントは、このステップですぐに追加することも、後で追加することも可能です。</p>
+<p>このステップをスキップした場合でも、後からOctoの請求アカウント詳細ページ（Billing Account Details Page）でサブアカウントを追加できます。</p>
+</div>
+<p>このステップでは、StackSet を使用して、請求アカウント（Payer Account）配下のすべてのサブアカウント（Linked Accounts）にAPIアクセスをデプロイします。
+多数のLinkedアカウントをOctoに一括で登録したい場合に便利です。</p>
+<p><img alt="sub account" src="../../../../assets/accountRegistration/7addSub.png" /></p>
+<ol>
+<li><strong>StackSetページ</strong>
+すべてのLinkedアカウントを接続する場合は、Open AWS Create Stack Page ボタンをクリックしてください。
+この操作で、AWSのCreate StackSetページが新しいタブで開きます。
+必ず、Payerアカウントにサインインしていることを確認してください。</li>
+</ol>
+<p><img alt="console1" src="../../../../assets/accountRegistration/consoleAddSub.png" /></p>
+<ol>
+<li>
+<p><strong>テンプレートの選択（AWS StackSetページ）</strong></p>
+<ol>
+<li>StackSetページで、Prerequisite – Prepare Template（前提条件 – テンプレートの準備） セクションまでスクロールし、
+Template is ready（テンプレートは準備済み） を選択します。</li>
+<li>Specify template（テンプレートの指定） では、Amazon S3 URL が選択されていることを確認し、
+Octoの「Add-sub accounts」ページに表示されているS3テンプレートURLを貼り付けてください。</li>
+<li>その後、Next（次へ） をクリックします。</li>
+</ol>
+</li>
+<li>
+<p><strong>StackSetの詳細を指定</strong></p>
+<ol>
+<li>
+<p>StackSet name（スタックセット名）には、任意の名前を入力するか、Octoからコピー＆ペーストしてください。</p>
+</li>
+<li>
+<p>Parameters（パラメータ） セクションでは、InternalID と Principal をそれぞれの入力欄に貼り付けます。
+これらの情報は、Octoの「Add-sub accounts」ページに記載されています。</p>
+</li>
+<li>
+<p>入力後、Next（次へ） をクリックします。</p>
+</li>
+</ol>
+</li>
+</ol>
+<p><img alt="console2" src="../../../../assets/accountRegistration/consoleAddSub2.png" /></p>
+<ol>
+<li>
+<p><strong>StackSetオプションの設定</strong></p>
+<ol>
+<li>
+<p>Execution configuration（実行設定） では、Inactive または Active のいずれかを選択します。</p>
+</li>
+<li>
+<p>その下にあるチェックボックスにチェックを入れます。</p>
+</li>
+<li>
+<p>Next（次へ） をクリックします。</p>
+</li>
+</ol>
+</li>
+</ol>
+<p><img alt="console3" src="../../../../assets/accountRegistration/consoleAddSub3.png" /></p>
+<ol>
+<li>
+<p><strong>デプロイオプションの設定</strong></p>
+<ol>
+<li>
+<p>複数アカウントへのスタックのデプロイは、組織全体をターゲットにするか、組織単位（OU）とアカウントフィルターオプションを使用して特定のアカウントをターゲットにすることで実行できます。</p>
+<ol>
+<li>
+<p>組織にデプロイするには、<code>Deploy to organization</code> を選択します。</p>
+</li>
+<li>
+<p>組織単位（OU）を使用して特定のアカウントにデプロイするには、<code>Deploy to organizational units (OUs)</code> を選択します。</p>
+</li>
+<li>
+<p><code>AWS OU ID</code> - デプロイ対象の組織単位のIDを入力します</p>
+</li>
+<li><code>アカウントフィルタータイプ - オプション</code> - OU全体ではなく、OU内の特定の個々のアカウントをデプロイターゲットに設定します。アカウントを除外したい場合は、<code>差分</code> を選択します。</li>
+<li><code>アカウント番号</code> - デプロイ対象のアカウントのリストです。以前に <code>差分</code> を選択した場合、ここにはデプロイから除外されるアカウントをリストします。</li>
+</ol>
+<p><img alt="OU" src="../../../../assets/accountRegistration/deployedOU.png" /></p>
+</li>
+<li>
+<p>下にスクロールして Specify regions（リージョンの指定）へ行き、<code>us-east-1</code> を入力します</p>
+</li>
+<li>
+<p>Next（次へ）をクリックします</p>
+</li>
+</ol>
+</li>
+</ol>
+<p><img alt="console4" src="../../../../assets/accountRegistration/consoleAddSub4.png" /></p>
+<p><img alt="console4.1" src="../../../../assets/accountRegistration/consoleAddSub4-1.png" /></p>
+<ol>
+<li>
+<p><strong>確認</strong></p>
+<ol>
+<li>
+<p>作成したStackSetの内容を確認し、Submit（送信） をクリックします。</p>
+</li>
+<li>
+<p>数秒後に、新しいStackSetがAWSのStackSetsメインページに表示されるはずです。</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Octoでの確認</strong></p>
+<ol>
+<li>
+<p>Octoに戻り、Check and confirm access（アクセスを確認） をクリックします。</p>
+</li>
+<li>
+<p>成功メッセージのバナーが表示されたら、Finish（完了） をクリックして、すべてのプロセスを終了します。</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="terraform">Terraform経由</h2>
+<div class="admonition note">
+<p class="admonition-title">この手順を進めるには、ローカル環境にTerraformがインストールされている必要があります。</p>
+<p>インストール方法については、[こちらのガイド]をご参照ください。
+（ 任意）AWSアカウントの認証にAWS CLIを使用したい場合は、[こちらのガイド]をご確認ください。</p>
+</div>
+<ol>
+<li><strong>登録方法の選択</strong>
+Via other options（その他のオプション） をクリックし、Terraform を選択します。</li>
+</ol>
+<p><img alt="terraform" src="../../../../assets/accountRegistration/1-2terraform.png" /></p>
+<ol>
+<li>
+<p><strong>基本情報</strong>
+このステップでは、入力されたアカウントIDおよびアカウント名を保存します。</p>
+<p>a. AWSアカウントID（12桁）を入力します。</p>
+<p>b. アカウント名を入力します。</p>
+<p>c. Register Account（アカウントを登録） をクリックします。</p>
+<p>d. エラーがない場合は、Next（次へ） をクリックします。</p>
+</li>
+</ol>
+<p><img alt="basicDetails" src="../../../../assets/accountRegistration/2basicDetails.png" /></p>
+<ol>
+<li>
+<p><a href="(https://registry.terraform.io/modules/alphauslabs/octo/aws/latest)">Terraformモジュールを確認</a>
+以下のTerraformモジュールを確認してください。
+モジュールのREADMEセクションに、詳細な説明および必要な入力項目が記載されています。</p>
+</li>
+<li>
+<p>terraform init を実行して、Terraform設定ファイルを含む作業ディレクトリを初期化します。
+次に terraform plan を実行して、どのリソースが作成されるかを確認し、
+terraform apply を実行してリソースを作成します。
+Terraform CLIの詳細については、[こちら]をご確認ください。</p>
+</li>
+<li>
+<p>上記のコマンドを実行した後、デプロイが正常に完了しているか確認してください。
+問題がなければ、Check and confirm（確認） をクリックして検証を行います。
+AWSのマネジメントコンソールから、リソースが正しく作成されているかを直接確認することもできます。</p>
+</li>
+<li>
+<p>Octo上では、以下のデプロイ状況を確認できます：
+API Access
+CURおよびS3バケット（Payerアカウントのみ）
+マルチアカウントAPIアクセス（オプション・Payerアカウントのみ）</p>
+</li>
+<li>
+<p>API Accessが成功していれば、Confirm and Finish（確認して完了） をクリックして登録を完了できます。</p>
+</li>
+</ol>
+<p>PayerアカウントをStackSetを使わずに登録した場合でも、後から有効化することが可能です。
+上記の手順を実行する際に、Terraformモジュール内の use_stackset パラメータを true に設定してください。
+これにより、リソースが更新され、すべてのLinkedアカウントが自動的にOctoに登録されます。
+Payerアカウントを削除して再登録する必要はありません。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021-2022 Alphaus Cloud. All rights reserved.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tabs", "navigation.sections"], "search": "../../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
