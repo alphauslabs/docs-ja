@@ -44,7 +44,14 @@ nav:
 
 - "Octo":
   - "はじめ": "octo/index.md"
-  
+  - "アカウント登録":
+    - "概要": "octo/accountregistration/account-registration.md"
+    - "AWS":
+            - "登録": "octo/accountregistration/AWS/account-registration-aws.md"
+            - "CloudFormation テンプレート":
+              - "APIアクセス": "octo/accountregistration/AWS/cloudformationtemplate/api-access.md"
+              - "CURとS3バケット": "octo/accountregistration/AWS/cloudformationtemplate/cur-s3-bucket-setup.md"
+
 extra:
   alternate:
   - name: English
